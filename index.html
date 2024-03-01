@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phero-Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bbe0395e13.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bbe0395e13.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mx-auto mt-10">
+    <header>
+        <div class="flex justify-between p-4">
+            <div>
+                <img src="image/Logo.png" alt="">
+            </div>
+            <h2 class="text-2xl bg-slate-200 p-4 rounded-lg hidden lg:block">Sort by view</h2>
+            <div>
+                <i id="arrow-icon" onclick="arrow()" class="fa-solid fa-arrow-left bg-orange-200 hidden"></i>
+                <button onclick="blogBtn( )" class="btn bg-red-500 px-7 text-white">Blog</button>
+            </div>
+        </div>
+        <hr class="mt-4">
+
+    </header>
+    <main id="main" class="mt-10">
+        <section>
+            <div id="btn-container" class="text-center flex gap-3 justify-center">
+                <!-- <button class="btn">All</button>
+                <button class="btn">Music</button>
+                <button class="btn">Comedy</button>
+                <button class="btn">Drawing</button> -->
+            </div>
+        </section>
+        <section class="mt-16">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- <div class="card w-96 bg-base-100 shadow-xl"> -->
+                    <!-- <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="flex gap-4 p-4">
+                        <img class="w-12 h-12" src="image/Icon.png" alt="">
+                        <div class="">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <img class="w-10" src="image/verify.jpeg" alt="">
+                          </div>
+                    </div> -->
+                  </div>
+            </div>
+            <div id="error-content" class="text-center hidden">
+                <img class="w-64 m-auto" src="image/error.jpg" alt="">
+                <h2 class="text-4xl font-extrabold">Oops!! Sorry, There is no <br> content here</h2>
+            </div>
+        </section>
+    </main>
+    <section id="blog-section" class="hidden">
+        <div class=" text-center">
+            <h1 class="text-6xl">Welcome to another Blog</h1>
+        </div>
+    </section>
+    <script src="script.js/index.js"></script>
+</body>
+</html>
